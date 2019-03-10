@@ -25,7 +25,7 @@
     .profile {
     display:block;
     position:relative;
-    border:#d0efff solid 3px;
+    border:#ffffff solid 3px;
     border-radius:5px;
     width:200px;
     height:200px;
@@ -37,7 +37,7 @@
     position:relative;
     width:200px;
     height:200px;
-    margin: -350px 0 10px 100px;
+    margin: 0px 0 10px 100px;
     z-index:999;
 }
     .bg-main{
@@ -54,33 +54,54 @@
         </div>
     
         <div class="row">
-        <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-2 col-sm-4 col-lg-2 col-6 profile" alt="">
-        <div class="col-md-7 offset-md-1 bg-timeLine" style="margin-top:50px; padding:40px;">
-                        <div class="row">
+            <div class="col-md-4 col-sm-4 col-lg-2 col-6">
+              <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style="" alt="">
+                <div class="info">
+                <p><b>Your Name</b></p>              
+                    <p>@yourname</p> 
+
+                    <p>Your very nice, keyword-rich bio.</p>
+                    <p>
+                    <i class="">Your Location</i><br>
+                    <i class="" style="color:blue;">Your Website</i>  
+                    </p>
+                   
+                </div>      
+            </div>        
+        <div class="col-md-7 offset-md-2 col-sm-7 offset-sm-1 bg-timeLine" style="margin-top:50px; padding:40px;">
+                <div class="row">
+                        <div class="">
+                            <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1 col-sm-2" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
+                            <p class="col-md-4 col-sm-4" style="margin-bottom:0px; margin-right:0px;">Your Name</p>
+                            <p class="col-md-11 offset-md-1" style="padding-top:0px">Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla</p>
+                        </div>
+                        <div class="">
+                        <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
+                            <p class="col-md-4" style="margin-bottom:0px;">Your Name</p>
+                            <p class="col-md-11 offset-md-1" style="padding-top:0px">Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
+                            Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla</p>
+                        </div>
                         
-                        <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
-                        <p class="col-md-4" style="margin-bottom:0px">Your Name</p>
-                        <p class="col-md-11 offset-md-1" style="padding-top:0px">Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
-                        Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla</p>
                        
-                        <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
-                        <p class="col-md-4" style="margin-bottom:0px;">Your Name</p>
-                        <p class="col-md-11 offset-md-1" style="padding-top:0px">hiyah hiyah hiyah hiyah hiyah hiyah hiyah</p>
+                        
                         
            
                     </div>
                     </div>
                     
 
-        <div class="col-md-2 col-sm-4 col-lg-2 col-6 info" alt="">
-              <p><b>Your Name</b></p>              
-                <p>@yourname</p>                     
-             </div> 
+   
                     
                    
                    
