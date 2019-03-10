@@ -71,8 +71,11 @@
         <div class="col-md-7 offset-md-2 col-sm-7 offset-sm-1 bg-timeLine" style="margin-top:50px; padding:40px;">
                 <div class="row">
                         <div class="">
+                           
                             <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1 col-sm-2" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
-                            <p class="col-md-4 col-sm-4" style="margin-bottom:0px; margin-right:0px;">Your Name</p>
+                       
+                                <span class="col-md-4 col-sm-4" style="margin-bottom:0px; margin-right:0px;">Your Name</span>
+                            
                             <p class="col-md-11 offset-md-1" style="padding-top:0px">Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
                             Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
                             Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
@@ -83,7 +86,7 @@
                         </div>
                         <div class="">
                         <img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="col-md-1" style="padding:0px; width:80px; height:50px; border: black solid"  alt="">
-                            <p class="col-md-4" style="margin-bottom:0px;">Your Name</p>
+                            <span class="col-md-4" style="margin-bottom:0px;">Your Name</span>
                             <p class="col-md-11 offset-md-1" style="padding-top:0px">Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
                             Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla
                             Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla Bla bla 
