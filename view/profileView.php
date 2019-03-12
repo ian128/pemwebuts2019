@@ -172,7 +172,7 @@ form{
                                 </div>
                         </div>   
                  </div>
-        <div class="col-md-8 offset-md-4 col-sm-8 offset-sm-2 col-lg-7 bg-timeLine">
+        <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 bg-timeLine">
             <div class="row timeline">
             </div>
 		</div>
