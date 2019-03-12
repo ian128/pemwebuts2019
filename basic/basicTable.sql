@@ -1,6 +1,8 @@
 CREATE TABLE `user` (
 	`UserID` varchar(20),
 	`ProfilePicture` blob,
+	`Bio` varchar(140),
+	`Web` varchar(80),
 	`NamaDepan` varchar(50),
 	`NamaBelakang` varchar(50),
 	`JenisKelamin` varchar(1),
@@ -41,9 +43,9 @@ ALTER TABLE `comment` ADD CONSTRAINT `comment_fk1` FOREIGN KEY (`CreatorID`) REF
 
 
 INSERT INTO `user`
-VALUES('10000000000000000000',NULL,'Kuki','Kaki','L','2000-01-01','Jakarta','Jalan Kedutaan','Jakarta','DKI Jakarta','0812345','email@email.com','','Kuki'),
-('10000000000000000001',NULL,'Jaaka','Jajak','L','1990-01-01','Jakarta','Jalan Kebesaran','Jakarta','DKI Jakarta','0832983285','2email@email.com','','Jaaka'),
-('10000000000000000002',NULL,'Abadi','Jaya','L','1999-01-01','Jakarta','Jalan Kekecilan','Jakarta','DKI Jakarta','09748364455','3emails@email.com','','Abadi');
+VALUES('10000000000000000000',NULL,'Ini Bio','www.123.com','Kuki','Kaki','L','2000-01-01','Jakarta','Jalan Kedutaan','Jakarta','DKI Jakarta','0812345','email@email.com','D5BE68F64D54FA6065DCC4308561A251','Kuki'),
+('10000000000000000001',NULL,'Bio 2','www.456.com','Jaaka','Jajak','L','1990-01-01','Jakarta','Jalan Kebesaran','Jakarta','DKI Jakarta','0832983285','2email@email.com','2CFBAFD9CA89D5E887A1351DC246900C','Jaaka'),
+('10000000000000000002',NULL,'Bio 3','www.789.com','Abadi','Jaya','L','1999-01-01','Jakarta','Jalan Kekecilan','Jakarta','DKI Jakarta','09748364455','3emails@email.com','A446A092795ED97FE8F10EF136765166','Abadi');
 
 
 INSERT INTO `post`
