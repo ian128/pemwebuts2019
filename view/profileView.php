@@ -89,7 +89,12 @@
 
 .bg-timeLine{
     background-color:#fff;
-    margin-top:50px; padding:40px;
+    margin-top:10px; padding:40px;
+}
+.bg-postStatus{
+    background-color:#fff;
+    margin-top:50px;
+    margin-bottom:60px; padding:40px;
 }
 
 .profile-picture-post{
@@ -120,6 +125,14 @@ form{
   	padding: 1.0em;
 }
     
+.status-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid blue;
+    box-shadow: 0 1px 0 0 blue;
+}
+.active-status-textarea.md-form label.active {
+    color: #ffa000;
+}
+
 </style>
 <body class="bg-main">
     <div class="container-fluid ">
@@ -140,9 +153,26 @@ form{
                     <i id="Kota">Your Location</i><br>
                     <i class="" style="color:blue;">Your Website</i>  
                     </p>
+                    <h5>list Friend</h5>
+                    <ul>
+                        <li>Jarwo koat</li>
+                        <li>Udin gakKUoat</li>
+                        <li>Supri angkot</li>
+                    </ul>
                 </div>      
-            </div>        
-        <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 bg-timeLine">
+            </div>     
+            <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 bg-postStatus">
+            <div class="row ">
+       
+                                <div class="col-md-12"> 
+                                    <form class="d-form status-textarea active-status-textarea col-md-12">
+                                    <textarea class=" md-textarea form-control" id="" rows="2" name="status" style="color:grey;" placeholder="Where are you now that I need ya?"></textarea>
+                                    <button type="submit" nama="postStatus" class="float-right btn btn-primary btn-rounded" >Post Dong!</button>
+                                    </form>
+                                </div>
+                        </div>   
+                 </div>
+        <div class="col-md-8 offset-md-4 col-sm-8 offset-sm-4 col-lg-7 bg-timeLine">
             <div class="row timeline">
             </div>
 		</div>
