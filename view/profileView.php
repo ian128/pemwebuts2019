@@ -78,11 +78,18 @@
     display:block;
     position:relative;
     width:200px;
-    height:400px;
+    height:200px;
     margin: 0px 0 10px 100px;
     z-index:999;
 }
-
+.friendList {
+    display:block;
+    position:relative;
+    width:150px;
+    height:200px;
+    margin: 0px 0 10px 90px;
+    z-index:999;
+}
 .bg-main{
     background-color:#e9ebee;
 }
@@ -94,7 +101,8 @@
 .bg-postStatus{
     background-color:#fff;
     margin-top:50px;
-    margin-bottom:60px; padding:40px;
+     padding:40px;
+    height:200px;
 }
 
 .profile-picture-post{
@@ -147,23 +155,24 @@ form{
                 <div class="info">
                 <p><b id="FullName">Your Name</b></p>              
                     <p>@yourname</p> 
-
                     <p id="Bio">Your very nice, keyword-rich bio.</p>
                     <p>
                     <i id="Kota">Your Location</i><br>
                     <i class="" style="color:blue;">Your Website</i>  
                     </p>
-                    <h5>list Friend</h5>
+                     </div>  
+                     <div class="friendList">
+                     <h5>list Friend</h5>
                     <ul>
                         <li>Jarwo koat</li>
                         <li>Udin gakKUoat</li>
                         <li>Supri angkot</li>
-                    </ul>
-                </div>      
-            </div>     
-            <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 bg-postStatus">
-            <div class="row ">
-       
+                    </ul>    
+                </div>
+              </div>
+              <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 ">
+                      <div class="bg-postStatus">
+                          <div class="row ">
                                 <div class="col-md-12"> 
                                     <form class="d-form status-textarea active-status-textarea col-md-12">
                                     <textarea class=" md-textarea form-control" id="" rows="2" name="status" style="color:grey;" placeholder="Where are you now that I need ya?"></textarea>
@@ -172,9 +181,12 @@ form{
                                 </div>
                         </div>   
                  </div>
-        <div class="col-md-8 offset-md-2 col-sm-8 offset-sm-2 col-lg-7 bg-timeLine">
-            <div class="row timeline">
-            </div>
-		</div>
+                 <div class=" bg-timeLine">
+                     <div class="row timeline">
+                 </div>
+		    </div>
+        </div>
+   </div>
+                
     </body>
 </html>
