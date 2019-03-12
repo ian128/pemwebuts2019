@@ -78,7 +78,7 @@
     display:block;
     position:relative;
     width:200px;
-    height:200px;
+    height:400px;
     margin: 0px 0 10px 100px;
     z-index:999;
 }
@@ -172,7 +172,7 @@ form{
                                 </div>
                         </div>   
                  </div>
-        <div class="col-md-8 offset-md-4 col-sm-8 offset-sm-4 col-lg-7 bg-timeLine">
+        <div class="col-md-8 offset-md-4 col-sm-8 offset-sm-2 col-lg-7 bg-timeLine">
             <div class="row timeline">
             </div>
 		</div>
