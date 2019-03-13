@@ -30,7 +30,7 @@
     }
 
     function getPost(){
-        $query= "SELECT * FROM post WHERE CreatorID = '".$_SESSION['UserID']."' ";
+        $query= "SELECT * FROM post WHERE CreatorID = '".$_SESSION['UserID']."' ORDER BY DateCreated DESC;";
         $result = db_connect()->query($query);
         $temp= array();
         foreach($result as $detail){
@@ -43,6 +43,53 @@
         return json_encode($temp);
     }
 
+    if(isset($_POST['NewPost'])){
+        echo newPost($_POST['NewPost']);
+    }
+
+    function newPost($content){
+        $query = "SELECT MAX(PostID) '' FROM POST;";
+        $result = db_connect()->query($query);
+        $newKey;
+        foreach($result as $detail){
+            $newKey=(string) $detail[""]+1;
+        }
+        $newKey = (string) $newKey;
+
+        $query="INSERT INTO post VALUES($newKey,'".$_SESSION['UserID']."',CURRENT_TIMESTAMP,'".$content."');";
+
+        try{   
+            $result = db_connect()->query($query);
+            echo '1';
+        } catch(Exception $e) {
+            echo '0';
+        }
+
+    }
+
+    if(isset($_POST['addComment'])){
+       echo newComment($_POST['addComment']);
+    }
+
+    function newComment($content){
+        $query = "SELECT MAX(CommentID) '' FROM comment;";
+        $result = db_connect()->query($query);
+        $newKey;
+        foreach($result as $detail){
+            $newKey=(string) $detail[""]+1;
+        }
+        $newKey = (string) $newKey;
+
+        $query="INSERT INTO comment VALUES($newKey,'".$content['PostID']."','".$_SESSION['UserID']."',CURRENT_TIMESTAMP,'".$content['content']."');";
+    
+        try{   
+            $result = db_connect()->query($query);
+            echo '1';
+        } catch(Exception $e) {
+            echo '0';
+        }
+
+    }
 
 
 ?>

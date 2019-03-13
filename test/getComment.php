@@ -1,7 +1,7 @@
 <?php
     function getComment($PostID){
         $query = "SELECT CONCAT(b.NamaDepan,' ',b.NamaBelakang) 'NamaLengkap', a.CommentID, a.PostID, a.CreatorID, a.DateCreated, a.Content FROM comment a, user b
-        WHERE a.PostID='".$PostID."' AND a.CreatorID = b.UserID;";
+        WHERE a.PostID='".$PostID."' AND a.CreatorID = b.UserID ORDER BY DateCreated ASC ;";
 
         $result = db_connect()->query($query);
 

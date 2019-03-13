@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 12, 2019 at 02:56 PM
+-- Generation Time: Mar 13, 2019 at 01:39 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -29,9 +29,9 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `comment` (
-  `CommentID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `PostID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `CreatorID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `CommentID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `PostID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `CreatorID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `DateCreated` datetime DEFAULT NULL,
   `content` varchar(480) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -41,10 +41,11 @@ CREATE TABLE `comment` (
 --
 
 INSERT INTO `comment` (`CommentID`, `PostID`, `CreatorID`, `DateCreated`, `content`) VALUES
-('30000000000000000000', '20000000000000000000', '10000000000000000001', '2019-03-12 10:59:00', 'Bidadadadadadada'),
-('30000000000000000001', '20000000000000000000', '10000000000000000002', '2019-03-12 11:00:00', 'Kuakuwi Kuakuwi Kuakuwi'),
-('30000000000000000002', '20000000000000000001', '10000000000000000001', '2019-03-12 13:59:00', 'Darf ich Sie zu einer kurzen Fuehrung durch die Firma einladen?'),
-('30000000000000000003', '20000000000000000001', '10000000000000000002', '2019-03-12 15:00:00', 'Sind Sie oft auf Geschaftsreise?');
+('2999999999', '1999999999', '0999999999', '2019-03-12 00:00:00', 'DUMMY DATA'),
+('3000000000', '2000000000', '1000000001', '2019-03-12 10:59:00', 'Bidadadadadadada'),
+('3000000001', '2000000000', '1000000002', '2019-03-12 11:00:00', 'Kuakuwi Kuakuwi Kuakuwi'),
+('3000000002', '2000000001', '1000000001', '2019-03-12 13:59:00', 'Darf ich Sie zu einer kurzen Fuehrung durch die Firma einladen?'),
+('3000000003', '2000000001', '1000000002', '2019-03-12 15:00:00', 'Sind Sie oft auf Geschaftsreise?');
 
 -- --------------------------------------------------------
 
@@ -53,8 +54,8 @@ INSERT INTO `comment` (`CommentID`, `PostID`, `CreatorID`, `DateCreated`, `conte
 --
 
 CREATE TABLE `post` (
-  `PostID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `CreatorID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `PostID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `CreatorID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `DateCreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `content` varchar(480) COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
@@ -64,8 +65,9 @@ CREATE TABLE `post` (
 --
 
 INSERT INTO `post` (`PostID`, `CreatorID`, `DateCreated`, `content`) VALUES
-('20000000000000000000', '10000000000000000000', '2019-03-12 03:56:00', 'Ahsiaaaap Ahsiaaaap Ahsiaaaap'),
-('20000000000000000001', '10000000000000000000', '2019-03-12 09:16:00', 'Ban mbledos');
+('1999999999', '0999999999', '2019-03-12 00:00:00', 'DUMMY DATA'),
+('2000000000', '1000000000', '2019-03-12 03:56:00', 'Ahsiaaaap Ahsiaaaap Ahsiaaaap'),
+('2000000001', '1000000000', '2019-03-12 09:16:00', 'Ban mbledos');
 
 -- --------------------------------------------------------
 
@@ -74,7 +76,7 @@ INSERT INTO `post` (`PostID`, `CreatorID`, `DateCreated`, `content`) VALUES
 --
 
 CREATE TABLE `user` (
-  `UserID` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `UserID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
   `ProfilePicture` blob,
   `Bio` varchar(140) COLLATE utf8_unicode_ci DEFAULT NULL,
   `Web` varchar(80) COLLATE utf8_unicode_ci DEFAULT NULL,
@@ -97,9 +99,10 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`UserID`, `ProfilePicture`, `Bio`, `Web`, `NamaDepan`, `NamaBelakang`, `JenisKelamin`, `TanggalLahir`, `TempatLahir`, `Alamat`, `Kota`, `Provinsi`, `hp`, `email`, `HashPass`, `salt`) VALUES
-('10000000000000000000', NULL, 'Ini Bio', 'www.123.com', 'Kuki', 'Kaki', 'L', '2000-01-01', 'Jakarta', 'Jalan Kedutaan', 'Jakarta', 'DKI Jakarta', '0812345', 'email@email.com', 'BA39CD29A2FC099F7E791468C245423C', 'Kuki'),
-('10000000000000000001', NULL, 'Bio 2', 'www.456.com', 'Jaaka', 'Jajak', 'L', '1990-01-01', 'Jakarta', 'Jalan Kebesaran', 'Jakarta', 'DKI Jakarta', '0832983285', '2email@email.com', '2CFBAFD9CA89D5E887A1351DC246900C', 'Jaaka'),
-('10000000000000000002', NULL, 'Bio 3', 'www.789.com', 'Abadi', 'Jaya', 'L', '1999-01-01', 'Jakarta', 'Jalan Kekecilan', 'Jakarta', 'DKI Jakarta', '09748364455', '3emails@email.com', 'A446A092795ED97FE8F10EF136765166', 'Abadi');
+('0999999999', NULL, 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'DUMMY DATA', 'Jakarta', 'DKI Jakarta', '0812345', 'email@email.com', 'DUMMY DATA', 'DUMMY DATA'),
+('1000000000', NULL, 'Hidup seperti susu yang tumpah', 'www.123.com', 'Kuki', 'Kaki', 'L', '2000-01-01', 'Jakarta', 'Jalan Kedutaan', 'Jakarta', 'DKI Jakarta', '0812345', 'email@email.com', 'BA39CD29A2FC099F7E791468C245423C', 'Kuki'),
+('1000000001', NULL, 'Bio 2', 'www.456.com', 'Jaaka', 'Jajak', 'L', '1990-01-01', 'Jakarta', 'Jalan Kebesaran', 'Jakarta', 'DKI Jakarta', '0832983285', '2email@email.com', '2CFBAFD9CA89D5E887A1351DC246900C', 'Jaaka'),
+('1000000002', NULL, 'Bio 3', 'www.789.com', 'Abadi', 'Jaya', 'L', '1999-01-01', 'Jakarta', 'Jalan Kekecilan', 'Jakarta', 'DKI Jakarta', '09748364455', '3emails@email.com', 'A446A092795ED97FE8F10EF136765166', 'Abadi');
 
 --
 -- Indexes for dumped tables
