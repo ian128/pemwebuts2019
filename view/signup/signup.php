@@ -27,13 +27,27 @@
 			
 			<form class="register-form" name="form" onsubmit="validateForm()" action="#">
 
+				<!--First Name Date-->
+				<label>First Name</label>
+	  			<input type="text" class="form-control" name="FirstName" id="FirstName" required/>
+
+				<!--Last Name Date-->
+				<label>Last Name</label>
+	  			<input type="text" class="form-control" name="LastName" id="LastName" required/>
+
 				<!--Username-->
 	  			<label>Username</label>
-	  			<input placeholder="Username" type="text" class="form-control" name="username" id="userName" required />
+	  			<input placeholder="Username" type="text" class="form-control" name="userName" id="userName" required />
+
+				<!--Place of birth-->
+				<label>Place of Birth</label>
+	  			<input placeholder="Birthplace" type="text" class="form-control" name="BirthPlace" id="BirthPlace" required />
+
 
 	  			<!--Birth Date-->
 	  			<label>Birth Date</label>
 	  			<input type="date" class="form-control" name="birthDate" id="birthDate" required/>
+				  
 
 	  			<!--Sex-->
 	  			<div>
@@ -57,6 +71,10 @@
 	  			<!--Password-->
 	  			<label>Password</label>
 	  			<input placeholder="Password" type="password" class="form-control" name="pass" id="pass" required/>
+				
+				<!--Phone-->
+				<label>Phone</label>
+	  			<input placeholder="Phone" type="text" class="form-control" name="Phone" id="Phone" required/>
 
 	  			<label>Sudah Punya akun?</label>
 	  			<a href="login.php"><b><u>Login</u></b></a>

@@ -36,10 +36,13 @@
 			{'login' : login},
 			function (response){ 
                let result=JSON.parse(response);
-               localStorage.setItem("Name",result['NamaDepan']+' '+result['NamaBelakang'])
+               console.log(result);
+               localStorage.setItem("Name",result['NamaDepan']+' '+result['NamaBelakang']);
+               $(".profile").attr("src","../images/user/"+result['UserID']+".jpg");
                $("#FullName").text(result['NamaDepan']+' '+result['NamaBelakang']);
                $("#Bio").text(result['Bio']);
                $("#Kota").text(result['Kota']);
+               $("#UserName").text('@'+result['UserID']);
 			})
 
             //tampilkan semua post yang dimiliki oleh user tersebut
@@ -47,6 +50,7 @@
 			{'getPost' : 1},
 			function (response){ 
                 data=JSON.parse(response)
+                console.log(data);
                 for(let item of data){
                     delete item[0]
                     delete item[1]
@@ -96,8 +100,6 @@
 }
 
 .profile {
-    display:block;
-    position:relative;
     border:#ffffff solid 3px;
     border-radius:5px;
     width:200px;
@@ -141,7 +143,9 @@
   	padding:0px;
    	width:64px;
    	height:64px;
-   	border: black solid;
+    border:#ffffff solid 3px;
+    border-radius:5px;
+    box-shadow: 0px 0px 4px black;
 }
 .a-comment{
    	background-color:#dddddd;
@@ -212,6 +216,7 @@ form{
                 <div class="info">
                 <h3><b id="FullName">Your Name</b></h3>              
                     <p id="Bio">Your very nice, keyword-rich bio.</p>
+                    <p id="UserName">Your very nice, keyword-rich bio.</p>
                     <p>
                     <i id="Kota">Your Location</i><br>
                     </p>
