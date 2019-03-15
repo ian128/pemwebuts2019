@@ -227,7 +227,7 @@ form{
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
               	<div class="row">
               		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style="" caption="Tap/click to change profile picture">
-                    <form style="visibility:hidden;" id="changeProfilePicture" enctype="multipart/form-data" action="../photoController.php" method="POST">
+                    <form style="visibility:hidden;" id="changeProfilePicture" enctype="multipart/form-data" action="../ControllerFeatures/ChangeProfilePicture.php" method="POST">
                         <input class="button" id="ProfilePictureContainer" name="gambar" type='file'>
                     </form>
             	</div>
