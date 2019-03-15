@@ -15,7 +15,7 @@
               // Proses upload
               unlink($directory.$_SESSION['UserID'].".jpg");
 
-              $destination = "images/user/".$nama_file;
+              $destination = $directory.$nama_file;
               if(move_uploaded_file($tmp_file, $destination)){
                     rename($destination,$directory.$_SESSION['UserID'].".jpg");
                     echo "

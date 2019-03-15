@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Mar 14, 2019 at 05:54 AM
+-- Generation Time: Mar 15, 2019 at 03:51 AM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 7.1.11
 
@@ -21,6 +21,56 @@ SET time_zone = "+00:00";
 --
 -- Database: `socialmedia`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `comment`
+--
+
+CREATE TABLE `comment` (
+  `CommentID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `PostID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `CreatorID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `DateCreated` datetime DEFAULT NULL,
+  `content` varchar(480) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `comment`
+--
+
+INSERT INTO `comment` (`CommentID`, `PostID`, `CreatorID`, `DateCreated`, `content`) VALUES
+('2999999999', '1999999999', '0999999999', '2019-03-12 00:00:00', 'DUMMY DATA'),
+('3000000000', '2000000000', 'kukikaki12', '2019-03-12 10:59:00', 'Bidadadadadadada'),
+('3000000001', '2000000000', 'jaaka23456', '2019-03-12 11:00:00', 'Kuakuwi Kuakuwi Kuakuwi'),
+('3000000002', '2000000001', 'kukikaki12', '2019-03-12 13:59:00', 'Darf ich Sie zu einer kurzen Fuehrung durch die Firma einladen?'),
+('3000000003', '2000000001', 'jaaka23456', '2019-03-12 15:00:00', 'Sind Sie oft auf Geschaftsreise?'),
+('3000000004', '2000000002', 'kukikaki12', '2019-03-14 14:35:28', 'komen');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `post`
+--
+
+CREATE TABLE `post` (
+  `PostID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `CreatorID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `DateCreated` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `content` varchar(480) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `post`
+--
+
+INSERT INTO `post` (`PostID`, `CreatorID`, `DateCreated`, `content`) VALUES
+('1999999999', '0999999999', '2019-03-12 00:00:00', 'DUMMY DATA'),
+('2000000000', 'kukikaki12', '2019-03-12 03:56:00', 'Ahsiaaaap Ahsiaaaap Ahsiaaaap'),
+('2000000001', 'kukikaki12', '2019-03-12 09:16:00', 'Ban mbledos'),
+('2000000002', 'kukikaki12', '2019-03-14 03:42:33', 'ahssiap'),
+('2000000003', 'kukikaki12', '2019-03-14 07:35:19', 'tes');
 
 -- --------------------------------------------------------
 
@@ -59,10 +109,42 @@ INSERT INTO `user` (`UserID`, `Bio`, `Web`, `NamaDepan`, `NamaBelakang`, `JenisK
 --
 
 --
+-- Indexes for table `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`CommentID`,`PostID`,`CreatorID`),
+  ADD KEY `comment_fk0` (`PostID`),
+  ADD KEY `comment_fk1` (`CreatorID`);
+
+--
+-- Indexes for table `post`
+--
+ALTER TABLE `post`
+  ADD PRIMARY KEY (`PostID`,`CreatorID`),
+  ADD KEY `post_fk0` (`CreatorID`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`UserID`);
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `comment`
+--
+ALTER TABLE `comment`
+  ADD CONSTRAINT `comment_fk0` FOREIGN KEY (`PostID`) REFERENCES `post` (`PostID`),
+  ADD CONSTRAINT `comment_fk1` FOREIGN KEY (`CreatorID`) REFERENCES `user` (`UserID`);
+
+--
+-- Constraints for table `post`
+--
+ALTER TABLE `post`
+  ADD CONSTRAINT `post_fk0` FOREIGN KEY (`CreatorID`) REFERENCES `user` (`UserID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
