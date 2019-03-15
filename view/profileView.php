@@ -73,7 +73,23 @@
                     function (response){ 
                         if(response)  window.location = window.location;
                     })
-            })           
+            })
+            
+            $("#CreatePost").click((e)=>{
+                let temp=$('#NewPostContent').val();
+                $.post("../controller.php",
+                    {'NewPost' : temp },
+                    function (response){ 
+                        if(response)  window.location = window.location;
+                    })
+            })
+
+            $(".profile").click(()=>{
+                $("#ProfilePictureContainer").click();
+            })
+            $("#ProfilePictureContainer").change(()=>{
+                $("#changeProfilePicture").submit();
+            })
         })
 
         window.onscroll = function() {
@@ -84,8 +100,7 @@
  			$(".navbar").fadeIn()
   		}
   		    prevScrollpos = currentScrollPos;
-        }
-    
+        }    
     </script>
 </head>
 <style>
@@ -212,6 +227,9 @@ form{
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
               	<div class="row">
               		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style="" caption="Tap/click to change profile picture">
+                    <form style="visibility:hidden;" id="changeProfilePicture" enctype="multipart/form-data" action="../photoController.php" method="POST">
+                        <input class="button" id="ProfilePictureContainer" name="gambar" type='file'>
+                    </form>
             	</div>
                 <div class="info">
                 <h3><b id="FullName">Your Name</b></h3>              
@@ -246,7 +264,6 @@ form{
                  </div>
 		    </div>
         </div>
-   </div>
-                
+    </div>   
     </body>
 </html>
