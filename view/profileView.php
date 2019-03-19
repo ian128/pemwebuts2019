@@ -19,12 +19,6 @@
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
               	<div class="row">
               		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style="" caption="Tap/click to change profile picture">
-<<<<<<< HEAD
-=======
-                    <form style="visibility:hidden;" id="changeProfilePicture" enctype="multipart/form-data" action="../photoController.php" method="POST">
-                        <input class="button" id="ProfilePictureContainer" name="gambar" type='file'>
-                    </form>
->>>>>>> parent of 71adfaf... File Optimization 1
             	</div>
                 <div class="info">
                 <h3><b id="FullName">Your Name</b></h3>              
