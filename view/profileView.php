@@ -28,14 +28,6 @@
                     <i id="Kota">Your Location</i><br>
                     </p>
                      </div>  
-                     <div class="friendList">
-                     <h5>list Friend</h5>
-                    <ul>
-                        <li>Jarwo koat</li>
-                        <li>Udin gakKUoat</li>
-                        <li>Supri angkot</li>
-                    </ul>    
-                </div>
                 <form style="visibility:hidden;" id="changeProfilePicture" enctype="multipart/form-data" action="../ControllerFeatures/ChangeProfilePicture.php" method="POST">
                         <input class="button" id="ProfilePictureContainer" name="gambar" type='file'>
                     </form>
