@@ -1,6 +1,6 @@
 <?php
     function getPost(){
-        $query= "SELECT * FROM post WHERE CreatorID = '".$_SESSION['Visiting']."' ORDER BY DateCreated DESC;";
+        $query= "SELECT * FROM post WHERE CreatorID = '".$_SESSION['UserID']."' ORDER BY DateCreated DESC;";
         $result = db_connect()->prepare($query);
         $result->execute();
         $temp= array();

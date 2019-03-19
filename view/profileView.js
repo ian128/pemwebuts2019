@@ -60,8 +60,16 @@ $(document).ready(()=>{
             selector.html(data[index]['comments'].map(commentTemplate));
         });
     }) 
-
     //bikin post baru
+    $("#CreatePost").click((e)=>{
+        let temp=$('#NewPostContent').val();
+        $.post("../controller.php",
+            {'NewPost' : temp },
+            function (response){ 
+                if(response)  window.location = window.location;
+            })
+    })
+    
     $("#CreatePost").click((e)=>{
         let temp=$('#NewPostContent').val();
         $.post("../controller.php",
