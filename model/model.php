@@ -1,7 +1,6 @@
 <?php
 class userProfile{
     private $UserID;
-    private $ProfilePicture;
     private $Bio;
     private $Web;
 	private $NamaDepan;
@@ -9,15 +8,12 @@ class userProfile{
 	private $JenisKelamin;
 	private $TanggalLahir;
 	private $TempatLahir;
-	private $Alamat;
-	private $Kota;
-	private $Provinsi;
-	private $Hp;
+    private $Kota;
+    private $Hp;
     private $Email;
-    function __constructor($UserID,$ProfilePicture,$Bio,$Web,$NamaDepan,$NamaBelakang,$JenisKelamin,
-    $TanggalLahir,$TempatLahir,$Alamat,$Kota,$Provinsi,$Hp,$Email){
+    function __constructor($UserID,$Bio,$Web,$NamaDepan,$NamaBelakang,$JenisKelamin,
+        $TanggalLahir,$TempatLahir,$Kota,$Hp,$Email){
         $this->UserID=$UserID;
-        $this->$ProfilePicture=$ProfilePicture;
         $this->$Bio=$Bio;
         $this->$Web=$Web;
         $this->$NamaDepan=$NamaDepan;
@@ -25,9 +21,7 @@ class userProfile{
         $this->$JenisKelamin=$JenisKelamin;
         $this->$TanggalLahir=$TanggalLahir;
         $this->$TempatLahir=$TempatLahir;
-        $this->$Alamat=$Alamat;
         $this->$Kota=$Kota;
-        $this->$Provinsi=$Provinsi;
         $this->$Hp=$Hp;
         $this->$Email=$Email;
     }
@@ -36,12 +30,6 @@ class userProfile{
     }
     public function setUserId($string){
         $this->UserID=$string;
-    }
-    public function getProfilePicture(){
-        return $this->ProfilePicture;
-    }
-    public function setProfilePicture($string){
-        $this->UserID=$ProfilePicture;
     }
     public function getBio(){
         return $this->Bio;
@@ -85,23 +73,11 @@ class userProfile{
     public function setTempatLahir($string){
         $this->TempatLahir=$string;
     }
-    public function getAlamat(){
-        return $Alamat->TanggalLahir;
-    }
-    public function setAlamat($string){
-        $this->Alamat=$string;
-    }
     public function getKota(){
         return $this->Kota;
     }
     public function setKota($string){
         $this->Kota=$string;
-    }
-    public function getProvinsi(){
-        return $this->Provinsi;
-    }
-    public function setProvinsi($string){
-        $this->Provinsi=$string;
     }
     public function getHp(){
         return $this->hp;

@@ -1,0 +1,93 @@
+.cover {
+    display:block;
+    position:relative;
+    width: 1500px;
+        height: 500px;
+        padding: 0px;
+    overflow:hidden;
+    z-index:1;
+}
+
+.profile {
+    border:#ffffff solid 3px;
+    border-radius:5px;
+    width:200px;
+    height:200px;
+    margin: -100px 0 10px 100px;
+    z-index:999;
+}
+
+.info {
+    display:block;
+    position:relative;
+    width:200px;
+    height:200px;
+    margin: 0px 0 10px 100px;
+    z-index:999;
+}
+.friendList {
+    display:block;
+    position:relative;
+    width:150px;
+    height:200px;
+    margin: 0px 0 10px 90px;
+    z-index:999;
+}
+.bg-main{
+    background-color:#e9ebee;
+}
+
+.bg-timeLine{
+    background-color:#fff;
+    margin-top:10px; padding:40px;
+}
+.bg-postStatus{
+    background-color:#fff;
+    margin-top:50px;
+     padding:40px;
+    height:200px;
+}
+
+.profile-picture-post{
+  	padding:0px;
+   	width:64px;
+   	height:64px;
+    border:#ffffff solid 3px;
+    border-radius:5px;
+    box-shadow: 0px 0px 4px black;
+}
+.a-comment{
+   	background-color:#dddddd;
+   	padding: 1.0em;
+    transition: 0.5s;
+}
+
+.a-comment:hover{
+   	background-color:#efefef;
+    box-shadow: 0px 0px 8px black;
+}
+
+.add-comment{
+}
+
+.a-post{
+   	padding: 1.0em;
+}
+
+.comment-body{}
+    
+textarea{
+    resize:none;
+}
+    
+form{
+  	padding: 1.0em;
+}
+    
+.status-textarea textarea.md-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid blue;
+    box-shadow: 0 1px 0 0 blue;
+}
+.active-status-textarea.md-form label.active {
+    color: #ffa000;
+}
