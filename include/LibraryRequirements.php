@@ -5,5 +5,5 @@
 <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css">
 <script src="../lib/bootstrap/bootstrap.min.js"></script>
 <script src="postTemplate.js"></script>
+<link rel="stylesheet" href="view.css">
 <script src="profileView.js"></script>
-<link rel="stylesheet" href="profileView.css">

@@ -1,9 +1,9 @@
 //this template writes on timeline
-postTemplate = ({DateCreated,content,PostID,CreatorID}) => `
+postTemplate = ({DateCreated,content,PostID,CreatorID,Name}) => `
 <div class="container a-post">
     <div class="post-main row">
         <div class="cols col-md-2 col-3"> <img src="../images/user/${CreatorID}.jpg" class="profile-picture-post" alt=""></div>
-        <div class="cols col-md-10 col-8"> <span>You</span> at <span>${DateCreated}</span> writes..</div>
+        <div class="cols col-md-10 col-8"> <span>${Name}</span> at <span>${DateCreated}</span> writes..</div>
         <p class="container">${content}</p>  
     </div>
     <div class="container comment-body">

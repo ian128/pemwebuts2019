@@ -1,9 +1,3 @@
-var login={
-    'username': 'email@email.com',
-    'password': '1234'
-}
-
-
 window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
    if (currentScrollPos >= 550) {
@@ -26,13 +20,23 @@ $(document).ready(()=>{
         }
     })
 
+    var login={
+        'username': 'email@email.com',
+        'password': '1234'
+    }
+    
     //login procedure
     $.post("../controller.php",
     {'login' : login},
+    function (response){
+
+    })
+
+    $.post("../controller.php",
+    {'getProfile' : '1'},
     function (response){ 
        let result=JSON.parse(response);
        console.log(result);
-       localStorage.setItem("Name",result['NamaDepan']+' '+result['NamaBelakang']);
        $(".profile").attr("src","../images/user/"+result['UserID']+".jpg");
        $("#FullName").text(result['NamaDepan']+' '+result['NamaBelakang']);
        $("#Bio").text(result['Bio']);
@@ -51,7 +55,6 @@ $(document).ready(()=>{
             delete item[1]
             delete item[2]
             delete item[3]
-            item['name']=localStorage.getItem("Name");
         }            
         $(".timeline").html(data.map(postTemplate).join(''));
 

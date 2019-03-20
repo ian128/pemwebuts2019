@@ -5,15 +5,21 @@ $(document).ready(()=>{
       let d=JSON.parse(response);
       $('#listOfFriends').html(d.map(friends).join(''));
     }) 
+
     
   })
 
 friends=({NamaLengkap,UserID})=>`
     <a click=getValue() class="dropdown-item" id="${UserID}">
     <span>${NamaLengkap} </span><span>(@${UserID})</span></a>
+
     <script>
     $("#${UserID}").click(()=>{
-        console.log("${UserID} clicked");
+        $.post("../controller.php",
+        {'VisitFriend' : "${UserID}"},
+        function (response){ 
+          document.location.href="friends.php"
+        }) 
     })
     </script>
     `;

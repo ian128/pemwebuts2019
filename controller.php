@@ -5,6 +5,7 @@
     include "ControllerFeatures/newPost.php";
     include "ControllerFeatures/newComment.php";
     include "ControllerFeatures/getFriends.php";
+    include "ControllerFeatures/getProfile.php";
 
     if(!isset($_SESSION)) session_start();
 
@@ -15,6 +16,18 @@
         }else{
             echo -1;
         }
+    }
+
+    if(isset($_POST['getProfile'])){
+        echo getProfile();
+    }
+
+    if(isset($_POST['MyProfile'])){
+        $_SESSION['Visiting']=$_SESSION['UserID'];
+    }
+
+    if(isset($_POST['VisitFriend'])){
+        $_SESSION['Visiting']=$_POST['VisitFriend'];
     }
 
     if(isset($_POST['getPost'])){
