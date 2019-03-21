@@ -18,7 +18,7 @@
               $destination = $directory.$nama_file;
               if(move_uploaded_file($tmp_file, $destination)){
                     rename($destination,$directory.$_SESSION['UserID'].".jpg");
-                    header("location:../view/profileView.php");
+                    header("location:../view/profile.php");
                 }else{
                     // Jika gambar gagal diupload, Lakukan :
                     echo "Maaf, Gambar gagal untuk diupload.";

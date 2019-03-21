@@ -1,6 +1,6 @@
 <?php
     function getPost(){
-        $query= "SELECT * FROM post WHERE CreatorID = '".$_SESSION['UserID']."' ORDER BY DateCreated DESC;";
+        $query= "SELECT a.PostID, a.CreatorID, a.DateCreated, a.content, CONCAT(b.NamaDepan,' ',b.NamaBelakang) 'Name' FROM post a, user b WHERE a.CreatorID = '".$_SESSION['Visiting']."' AND a.CreatorID = b.UserID ORDER BY DateCreated DESC;";
         $result = db_connect()->prepare($query);
         $result->execute();
         $temp= array();
@@ -9,7 +9,7 @@
 
             //create and link array of comments of this post
             $detail["comments"]=getComment($key);
-
+            unset($detail[4]);
             array_push($temp,$detail);
         }
 
