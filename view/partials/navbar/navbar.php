@@ -29,4 +29,15 @@
         })
     })
   })
+
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+   if (currentScrollPos >= 550) {
+       $(".navbar").fadeOut()
+   } else {
+       $(".navbar").fadeIn()
+    }
+        prevScrollpos = currentScrollPos;
+}    
+
 </script>

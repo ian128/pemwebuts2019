@@ -9,6 +9,7 @@
         foreach($result as $detail){
             if(!empty($detail)){
                 $_SESSION['UserID']=$detail[0];
+                //$_SESSION['Visiting']=$_SESSION['UserID'];
                 $_SESSION['FullName']=$detail[3].' '.$detail[4];
                 return json_encode($detail);
                 /*$userData = new userProfile($detail[0],$detail[1],$detail[2],$detail[3],$detail[4],$detail[5],
