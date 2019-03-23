@@ -34,9 +34,20 @@
 </head>
 <body>
 <div class="limiter">
+<?php
+if(isset($_POST["signUp"])){
+	$json = '{"firstName": "'.$_POST["firstName"].'","lastName": "'.$_POST["lastName"].'","userName": "'.$_POST["userName"].'","birthPlace": "'.$_POST["birthPlace"].'","birthDate": "'.$_POST["birthDate"].'","sex": "'.$_POST["sex"].'","email": "'.$_POST["email"].'","password": "'.$_POST["pass"].'","city": "'.$_POST["city"].'","phone": "'.$_POST["phone"].'"}';
+
+	$obj = json_decode($json);
+	var_dump($obj);
+}
+
+//print $obj->{'firstName'}; // 12345
+
+?>
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
-				<form class="login100-form validate-form flex-sb flex-w card card-register">
+				<form class="login100-form validate-form flex-sb flex-w card card-register" method="post">
 					<span class="login100-form-title p-b-51">
 						Sign Up
 					</span>
@@ -63,7 +74,7 @@
 					</div>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Birth Date is required">
-						<input class="input100" type="date" name="birtDate" id="birthDate" placeholder="Birt Date">
+						<input class="input100" type="date" name="birthDate" id="birthDate" placeholder="Birt Date">
 						<span class="focus-input100"></span>
 					</div>
 
@@ -119,7 +130,7 @@
 					
 
 					<div class="container-login100-form-btn m-t-17">
-						<input id="login" type="button" class="login100-form-btn" value="Sign Up">
+						<button id="login" type="submit" name="signUp" class="login100-form-btn">Sign Up</button>
 					</div>
 
 				</form>
@@ -150,6 +161,7 @@
 		}
 	}
 </script>
+
 </body>
 </html>
 
