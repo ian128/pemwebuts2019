@@ -9,83 +9,125 @@
 
 	<meta name="description" content="">
 	<meta name="author" content="">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700" rel="stylesheet" type="text/css">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"> 
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous"> -->
+	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">  -->
 	<link rel="stylesheet" type="text/css" href="signup.css">
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
-
+	<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script> -->
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script> -->
+	
+	<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="../login/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../login/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="../login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="../login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="../login/css/main.css">
 </head>
 <body>
-	<div class="wrapper">
-  		<div class="card card-register">
-			<h2 data-type="header" class="title">Sign Up
-			</h2>
-			
-			<form class="register-form" name="form" onsubmit="validateForm()" action="#">
+<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-t-50 p-b-90">
+				<form class="login100-form validate-form flex-sb flex-w card card-register">
+					<span class="login100-form-title p-b-51">
+						Sign Up
+					</span>
 
-				<!--First Name Date-->
-				<label>First Name</label>
-	  			<input type="text" class="form-control" name="FirstName" id="FirstName" required/>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "First Name is required">
+						<input class="input100" type="text" name="firstName" placeholder="First Name">
+						<span class="focus-input100"></span>
+					</div>
 
-				<!--Last Name Date-->
-				<label>Last Name</label>
-	  			<input type="text" class="form-control" name="LastName" id="LastName" required/>
-
-				<!--Username-->
-	  			<label>Username</label>
-	  			<input placeholder="Username" type="text" class="form-control" name="userName" id="userName" required />
-
-				<!--Place of birth-->
-				<label>Place of Birth</label>
-	  			<input placeholder="Birthplace" type="text" class="form-control" name="BirthPlace" id="BirthPlace" required />
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Last Name is required">
+						<input class="input100" type="text" name="lastName" placeholder="Last Name">
+						<span class="focus-input100"></span>
+					</div>
 
 
-	  			<!--Birth Date-->
-	  			<label>Birth Date</label>
-	  			<input type="date" class="form-control" name="birthDate" id="birthDate" required/>
-				  
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "username is required">
+						<input class="input100" type="text" name="userName" placeholder="username">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Birth Place is required">
+						<input class="input100" type="text" name="birthPlace" placeholder="Birth Place">
+						<span class="focus-input100"></span>
+					</div>
 
-	  			<!--Sex-->
-	  			<div>
-		  			<label>Sex : </label>
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Birth Date is required">
+						<input class="input100" type="date" name="birtDate" id="birthDate" placeholder="Birt Date">
+						<span class="focus-input100"></span>
+					</div>
 
-					<!--Sex male-->
-					<input type="radio" name="sex" id="checkboxM" value="male" name="sexMale" required/>
-					<label class="radio-inline">Male</label>
+					<div class="wrap-input100 validate-input m-b-16" >
+						<div class="container">
+
+							<!-- <input class="input100" type="radio" name="BirthPlace" placeholder="Birth Place">
+						<span class="focus-input100"></span> -->
+						<label>Sex : </label>
+
+							<!-- Sex male -->
+							<div class="row">
+								<div class="col-md-6">
+									<center>
+										<h6 class="radio-inline">Male</h6>
+										<input type="radio" name="sex" id="checkboxM" value="male" name="sexMale" required/>
+									</center>
+								</div>
+							
+
+							<!-- Sex Female -->
+								<div class="col-md-6">
+									<center>
+									<h6 class="radio-inline"> Female </h6>
+										<input type="radio" name="sex" id="checkboxF" value="female" name="sexFemale" required/>	
+									</center>
+								
+								</div>
+							
+							</div>
+						</div>					
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Email is required">
+						<input class="input100" type="email" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
+						<input class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "City is required">
+						<input class="input100" type="text" name="city" placeholder="City">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input m-b-16" data-validate = "Phone is required">
+						<input class="input100" type="text" name="phone" placeholder="Phone">
+						<span class="focus-input100"></span>
+					</div>
 					
 
-					<!--Sex Female-->
-					<input type="radio" name="sex" id="checkboxF" value="female" name="sexFemale" required/>
-					<label class="radio-inline"> Female </label>
-					
-	  			</div>
+					<div class="container-login100-form-btn m-t-17">
+						<input id="login" type="button" class="login100-form-btn" value="Sign Up">
+					</div>
 
-	  			<!--Email-->
-	  			<label>Email</label>
-	  			<input placeholder="Email" type="text" class="form-control" name="email" id="email" required/>
-
-	  			<!--Password-->
-	  			<label>Password</label>
-	  			<input placeholder="Password" type="password" class="form-control" name="pass" id="pass" required/>
-				
-				<!--Phone-->
-				<label>Phone</label>
-	  			<input placeholder="Phone" type="text" class="form-control" name="Phone" id="Phone" required/>
-
-	  			<label>Sudah Punya akun?</label>
-	  			<a href="login.php"><b><u>Login</u></b></a>
-
-	  			<!--Button btn btn-block btn-round -->
-			  	<div>
-					<button type="submit" class="btn btn-block btn-round">Register</button>
-	  			</div>
-			</form>
-  		</div>
-	</div>
+				</form>
+			</div>
+		</div>
+	</div>	
+<script src="../login/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="../login/js/main.js"></script>
 <script>
 	function validateForm() {
 		var username = document.getElementById("username").value;

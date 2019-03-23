@@ -7,6 +7,7 @@ include "../../controller.php";
 	<title>WELCOME</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../signup/signup.css">
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -23,11 +24,11 @@ include "../../controller.php";
 	<div class="limiter">
 		<div class="container-login100">
 			<div class="wrap-login100 p-t-50 p-b-90">
-				<form class="login100-form validate-form flex-sb flex-w">
+				<form class="login100-form validate-form flex-sb flex-w card card-register">
 					<span class="login100-form-title p-b-51">
 						Login
 					</span>
-	
+				
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "username is required">
 						<input class="input100" type="text" name="username" placeholder="username">
 						<span class="focus-input100"></span>
