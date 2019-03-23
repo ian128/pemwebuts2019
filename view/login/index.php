@@ -1,4 +1,8 @@
 <html>
+<?php
+include "../../controller.php";
+?>
+
 <head>
 	<title>WELCOME</title>
 	<meta charset="UTF-8">

@@ -12,9 +12,9 @@
     if(isset($_POST['login'])){
         $data=login($_POST['login']['username'],$_POST['login']['password']);
         if($data != null){
-            echo $data;
+            echo true;
         }else{
-            echo -1;
+            echo false;
         }
     }
 
