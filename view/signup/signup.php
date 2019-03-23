@@ -76,7 +76,7 @@
 
 							<!-- Sex male -->
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6 col-6">
 									<center>
 										<h6 class="radio-inline">Male</h6>
 										<input type="radio" name="sex" id="checkboxM" value="male" name="sexMale" required/>
@@ -85,7 +85,7 @@
 							
 
 							<!-- Sex Female -->
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6 col-6">
 									<center>
 									<h6 class="radio-inline"> Female </h6>
 										<input type="radio" name="sex" id="checkboxF" value="female" name="sexFemale" required/>	
