@@ -9,7 +9,6 @@
 
 	<meta name="description" content="">
 	<meta name="author" content="">
-
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"> 
@@ -18,6 +17,7 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div class="wrapper">
@@ -101,7 +101,7 @@
 		var email = document.getElementById("email").value;
 		var pass = document.getElementById("pass").value;
 
-		if (username != "" && birthDate!="" && sex !="" && email !="" && pass !=") {
+		if (username != "" && birthDate!="" && sex !="" && email !="" && pass !="") {
 			return true;
 		}else{
 			alert('Anda harus mengisi data dengan lengkap !');

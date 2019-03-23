@@ -1,13 +1,3 @@
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-   if (currentScrollPos >= 550) {
-       $(".navbar").fadeOut()
-   } else {
-       $(".navbar").fadeIn()
-    }
-        prevScrollpos = currentScrollPos;
-}    
-
 $(document).ready(()=>{
 
     //prep si form status
@@ -18,18 +8,6 @@ $(document).ready(()=>{
         }else{
             $("#CreatePost").prop("disabled", false);
         }
-    })
-
-    var login={
-        'username': 'email@email.com',
-        'password': '1234'
-    }
-    
-    //login procedure
-    $.post("../controller.php",
-    {'login' : login},
-    function (response){
-
     })
 
     $.post("../controller.php",
