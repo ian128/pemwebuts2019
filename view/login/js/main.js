@@ -47,7 +47,6 @@ $('.validate-form .input100').each(function(){
 
 $(document).ready(()=>{
     $('.login100-form-btn').click(()=>{
-        console.log(checkLogin());
-
+        console.log("Form filled completely "+checkLogin());
     })
 })
