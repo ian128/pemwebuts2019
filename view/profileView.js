@@ -54,6 +54,7 @@ $(document).ready(()=>{
         $("#ProfilePictureContainer").click();
     })
     $("#ProfilePictureContainer").change(()=>{
+        window.location.reload(true);
         $("#changeProfilePicture").submit();
     })
 })
