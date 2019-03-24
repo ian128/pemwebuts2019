@@ -13,7 +13,7 @@
             <a class="nav-link myprofile" href="profile.php"><b>Hello, <?php echo $_SESSION['FullName']?></b></a>
           </li>
         </ul>
-        <a class="btn navbar-btn mx-2 btn-primary shadowed" href="#download">Logout</a>
+        <a id="logout" class="btn navbar-btn mx-2 btn-primary shadowed">Logout</a>
       </div>
    </div>
 </nav>

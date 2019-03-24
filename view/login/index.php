@@ -30,13 +30,12 @@ include "../../controller.php";
 					</span>
 				
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "username is required">
-						<input class="input100" type="text" name="username" placeholder="username">
+						<input id="username" class="input100" type="text" name="username" placeholder="username">
 						<span class="focus-input100"></span>
 					</div>
 					
-					
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+						<input id="password" class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
 					<div class="container-login100-form-btn m-t-17">

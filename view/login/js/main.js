@@ -47,6 +47,21 @@ $('.validate-form .input100').each(function(){
 
 $(document).ready(()=>{
     $('.login100-form-btn').click(()=>{
-        console.log("Form filled completely "+checkLogin());
+        if(checkLogin() == true){
+            var username = $("#username").val();
+            var password = $("#password").val();
+            var credentials = {
+                'username': username,
+                'password': password
+            }
+            console.log(credentials);
+        
+            $.post("../../controller.php",
+                {'login' : credentials},
+                function (response){
+                    if(response == 1) document.location.href="../profile.php"
+                    else alert("Akun tidak ditemukan!");
+                })
+        }
     })
-})
+});

@@ -14,7 +14,6 @@ $(document).ready(()=>{
     {'getProfile' : '1'},
     function (response){ 
        let result=JSON.parse(response);
-       console.log(result);
        $(".profile").attr("src","../images/user/"+result['UserID']+".jpg");
        $("#FullName").text(result['NamaDepan']+' '+result['NamaBelakang']);
        $("#Bio").text(result['Bio']);
@@ -27,7 +26,6 @@ $(document).ready(()=>{
     {'getPost' : 1},
     function (response){ 
         data=JSON.parse(response)
-        console.log(data);
         for(let item of data){
             delete item[0]
             delete item[1]
@@ -59,3 +57,7 @@ $(document).ready(()=>{
         $("#changeProfilePicture").submit();
     })
 })
+
+function defaultImage(){
+    $(".profile").attr("src","../default/user.jpg");
+}

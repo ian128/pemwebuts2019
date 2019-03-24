@@ -1,6 +1,5 @@
 <?php
     include "../controller.php";
-    var_dump($_SESSION);
     include '../include/LibraryRequirements.php';    
     include 'partials/navbar/navbar.php';
 ?>
@@ -18,11 +17,12 @@
         <div class="row">
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
               	<div class="row">
-              		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style="" caption="Tap/click to change profile picture">
+              		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg"
+                      class="profile" style="" caption="Tap/click to change profile picture"
+                      onerror="defaultImage()">
             	</div>
                 <div class="info">
-                <h3><b id="FullName">Your Name</b></h3>              
-                    <p id="Bio">Your very nice, keyword-rich bio.</p>
+                <h3><b id="FullName">Your Name</b></h3> 
                     <p id="UserName">Your very nice, keyword-rich bio.</p>
                     <p>
                     <i id="Kota">Your Location</i><br>

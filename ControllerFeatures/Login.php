@@ -1,7 +1,7 @@
 <?php
-    function login($email,$password){
+    function login($UserID,$password){
         $md5function="MD5(CONCAT('".$password."',salt))";
-        $query = "SELECT * FROM user WHERE email='".$email."' AND $md5function=HashPass;";
+        $query = "SELECT * FROM user WHERE UserID='".$UserID."' AND HashPass=$md5function;";
 
         $result = db_connect()->prepare($query);
         $result->execute();

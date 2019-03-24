@@ -5,7 +5,14 @@ $(document).ready(()=>{
       let d=JSON.parse(response);
       $('#listOfFriends').html(d.map(friends).join(''));
     }) 
-
+    
+    $("#logout").click(()=>{
+      $.post("../controller.php",
+      {'logout' : 1},
+      function (response){ 
+        document.location.href="login";
+      }) 
+    })
     
   })
 
