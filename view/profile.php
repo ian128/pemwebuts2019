@@ -12,7 +12,7 @@
 <body class="bg-main">
     <div class="container-fluid ">
         <div class="row ">
-            <img class="cover" src="https://www.londoninstereo.com/lisnew/wp-content/uploads/2016/11/HONNE-Aug-2015-pic.jpg" alt="">
+            <img class="cover" src="../default/cover.jpg">
         </div>
         <div class="row">
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
