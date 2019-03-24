@@ -5,15 +5,17 @@
       <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item dropdown" >
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Directories</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Friend List</a>
             <div class="dropdown-menu dropdown-menu-left" id="listOfFriends" style="max-height:20em; overflow-y: scroll;">
             </div>
           </li>
           <li class="nav-item mx-2">
             <a class="nav-link myprofile" href="profile.php"><b>Hello, <?php echo $_SESSION['FullName']?></b></a>
           </li>
+          <li class="nav-item mx-2"> 
+          <a id="logout" class="btn navbar-btn mx-2 btn-primary shadowed">Logout</a>
+          </li>
         </ul>
-        <a id="logout" class="btn navbar-btn mx-2 btn-primary shadowed">Logout</a>
       </div>
    </div>
 </nav>
