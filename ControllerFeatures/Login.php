@@ -1,6 +1,10 @@
 <?php
     function login($UserID,$password){
+        $UserID = mysqli_real_escape_string(db_connect(), $UserID);
+        $password = mysqli_real_escape_string(db_connect(), $password);
         $md5function="MD5(CONCAT('".$password."',salt))";
+
+      
         $query = "SELECT * FROM user WHERE UserID='".$UserID."' AND HashPass=$md5function;";
 
         $result = db_connect()->prepare($query);
