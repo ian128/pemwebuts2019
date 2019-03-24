@@ -25,6 +25,7 @@
 					<span class="login100-form-title p-b-51">
 						Sign Up
 					</span>
+					<a href="../login" align="center">Have an account? Login</a>
 
 					<div class="wrap-input100 validate-input m-b-16" data-validate = "First Name is required">
 						<input class="input100" type="text" name="firstName" placeholder="First Name">

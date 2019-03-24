@@ -38,6 +38,7 @@ include "../../controller.php";
 						<input id="password" class="input100" type="password" name="pass" placeholder="Password">
 						<span class="focus-input100"></span>
 					</div>
+					<a href="../signup" align="center">Create an account</a>
 					<div class="container-login100-form-btn m-t-17">
 						<input id="login" type="button" class="login100-form-btn" value="login">
 					</div>

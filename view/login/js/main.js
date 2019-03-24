@@ -60,7 +60,7 @@ $(document).ready(()=>{
                 {'login' : credentials},
                 function (response){
                     if(response == 1) document.location.href="../profile.php"
-                    else alert("Akun tidak ditemukan!");
+                    else alert("Account not found!");
                 })
         }
     })

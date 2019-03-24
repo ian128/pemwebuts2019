@@ -18,8 +18,10 @@
         $_POST['city'],$_POST['phone'],$_POST['email'],$_POST['firstName'],$_POST['pass'],
         $_POST['userName']);
         if($result == true){
+            echo "<script> alert('New Account has been created!'</script>";
             header("location:view/login");
         }else{
+            echo "<script> alert('New Account cannot be created!'</script>";
             header("location:view/signup");
         }
 

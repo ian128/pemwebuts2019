@@ -38,7 +38,7 @@
                                 <div class="col-md-12"> 
                                     <form class="d-form status-textarea active-status-textarea col-md-12">
                                     <textarea class=" md-textarea form-control" id="NewPostContent" rows="2" name="status" style="color:grey;" placeholder="Where are you now that I need ya?"></textarea>
-                                    <input type="button" class="btn btn-primary" id="CreatePost" value="Buat Post Dong!"/>
+                                    <input type="button" class="btn btn-primary" id="CreatePost" value="Post!"/>
                                     </form>
                                 </div>
                         </div>   
