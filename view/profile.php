@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-4 col-lg-2 col-6">
               	<div class="row">
-              		<img src="http://malvorlagen-fensterbilder.de/bilder-bunt/Micky-Maus.jpg" class="profile" style=""
+              		<img src="" class="profile" style=""
                       onerror="defaultImage()" caption="Tap/click to change profile picture">
             	</div>
                 <div class="info">
