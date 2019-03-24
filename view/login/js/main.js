@@ -46,7 +46,7 @@ $('.validate-form .input100').each(function(){
     }
 
 $(document).ready(()=>{
-    $('.login100-form-btn').click(()=>{
+    $('.loginNow').click(()=>{
         if(checkLogin() == true){
             var username = $("#username").val();
             var password = $("#password").val();

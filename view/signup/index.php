@@ -115,6 +115,15 @@
 <script src="../login/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<script src="../login/js/main.js"></script>
 <script>
+	$(document).ready(()=>{
+		$("input[name='userName']").keyup(()=>{
+			let selector = $("input[name='userName']");
+			let value = selector.val()
+			if(value.length > 10){
+				selector.val(value.slice(0,10));
+			}
+		})
+	})
 	function validateForm() {
 		var username = document.getElementById("username").value;
 		var birthDate = document.getElementById("birthDate").value;

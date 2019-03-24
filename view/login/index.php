@@ -40,7 +40,7 @@ include "../../controller.php";
 					</div>
 					<a href="../signup" align="center">Create an account</a>
 					<div class="container-login100-form-btn m-t-17">
-						<input id="login" type="button" class="login100-form-btn" value="login">
+						<input id="login" type="button" class="login100-form-btn loginNow" value="login">
 					</div>
 
 				</form>
