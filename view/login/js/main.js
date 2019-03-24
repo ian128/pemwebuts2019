@@ -54,8 +54,6 @@ $(document).ready(()=>{
                 'username': username,
                 'password': password
             }
-            console.log(credentials);
-        
             $.post("../../controller.php",
                 {'login' : credentials},
                 function (response){

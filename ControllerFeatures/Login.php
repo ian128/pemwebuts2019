@@ -1,7 +1,7 @@
 <?php
     function login($UserID,$password){
-        $UserID = mysqli_real_escape_string(db_connect(), $UserID);
-        $password = mysqli_real_escape_string(db_connect(), $password);
+        $UserID = preg_replace("/[^a-zA-Z0-9]/", "", $UserID);
+
         $md5function="MD5(CONCAT('".$password."',salt))";
 
       
